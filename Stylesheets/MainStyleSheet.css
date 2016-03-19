@@ -1,0 +1,54 @@
+body {
+    margin:0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: blue;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: 	darkblue;
+}
+
+.active {
+    background-color: 	darkblue;
+}
+.HomePageTextElements {
+    font-family: sans-serif;
+    font-weight: bold;
+    color: darkblue;
+}
+#TourDestinationsHeader {
+    margin-top: 70px;
+    text-align: center;
+}
+#SlideShowImages {
+    margin-top: 25px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 900px;
+    height: 490px;
+}
