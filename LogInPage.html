@@ -18,12 +18,17 @@
             </li>
             <li style="float:right"><a href="LogInPage.html" id="UserName" >UserName</a></li>
         </ul>
-        <h2 class="HomePageTextElements" id="TourDestinationsHeader">Tour destinations</h2>
-        <img id="SlideShowImages"/>
-        <a href="GetStartedPage.html">
-            <input type="button" id="GetStartedButton" class="UserButtons" value="Select destination point" style="margin-top:25px"/>
-        </a>
-        <script type="text/javascript" src="Scripts/MainScript.js">
-        </script>
+        <div id="LoginPageFrame">
+            <p id="LoginLabel" class="UserLabels">Login:</p>
+            <input id="LoginInput" class="UserInputs" type="text"/>
+            <p id="PasswordLabel" class="UserLabels">Password:</p>
+            <input id="PasswordInput" class="UserInputs" type="text"/>
+            <a href="PersonalCabinetPage.html">
+                <input id="EnterButton" type="button" class="UserButtons" value="Log in"/>
+            </a>
+            <a href="RegisterPage.html">
+                <p id="SignUp" class="UserLabels">Sign Up</p>
+            </a>
+        </div>
     </body>
 </html>
