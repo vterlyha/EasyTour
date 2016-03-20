@@ -1,0 +1,83 @@
+<html>    
+    <head>
+        <title>Easy tour</title>
+        <link rel="icon" type="image/ico" href="Resources/TitleIcon.ico" />
+        <link rel="stylesheet" type="text/css" href="Stylesheets/MainStyleSheet.css"/>
+    </head>
+    <body style="margin:0">
+          
+        <ul>
+            <li><a href="EasyTourUI.html" id="HomeTab">Easy-Tour</a></li>
+            <li><a href="LocationOverview.html" id="CountriesTab">Countries</a></li>
+            <li><a href="GetStartedPage.html" id="VocationTab">Get started</a></li>
+            <li><a id="About">About</a></li>
+            <li style="float:right">
+                <a id="UserAvatarLink">
+                    <img width="20px" height="22px" id="UserAvatarImg" src="Resources/UserAvatar.png"/>
+                </a>
+            </li>
+            <li style="float:right"><a href="LogInPage.html" id="UserName" >UserName</a></li>
+        </ul>
+        <div id="LoginFrame">
+            <p id="LoginLabel" class="UserLabels">*Login:</p>
+            <input id="LoginInput" class="UserInputs" type="text"/>
+            <p id="PasswordLabel" class="UserLabels">*Password:</p>
+            <input id="PasswordInput" class="UserInputs" type="text"/>
+            <p id="RepeatPasswordLabel" class="UserLabels">*Repeat password:</p>
+            <input id="RepeatPasswordInput" class="UserInputs" type="text"/>
+            <p id="EmailLabel" class="UserLabels">*E-mail:</p>
+            <input id="EmailInput" class="UserInputs" type="text"/>
+            <p id="DateOfBirthLabel" class="UserLabels">*Date of birth:</p>
+            <select id="DayDateSelect" class="RegUserSelects">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                  <option value="13">13</option>
+                  <option value="14">14</option>
+                  <option value="15">15</option>
+                  <option value="16">16</option>
+            </select>
+            <select id="MonthDateSelect" style="width:160px" class="RegUserSelects">
+                  <option value="January">January</option>
+                  <option value="Febrary">Febrary</option>
+                  <option value="March">March</option>
+                  <option value="April">April</option>
+                  <option value="May">May</option>
+                  <option value="June">June</option>
+                  <option value="July">July</option>
+                  <option value="August">August</option>
+                  <option value="September">September</option>
+                  <option value="October">October</option>
+                  <option value="November">November</option>
+                  <option value="December">December</option>
+            </select>
+            <select id="YearDateSelect" class="RegUserSelects">
+                  <option value="1991">1992</option>
+                  <option value="1993">1993</option>
+                  <option value="1994">1994</option>
+                  <option value="1995">1995</option>
+                  <option value="1996">1996</option>
+                  <option value="1997">1997</option>
+                  <option value="1998">1998</option>
+                  <option value="1999">1999</option>
+                  <option value="2000">2000</option>
+            </select>
+            <p id="AddressLabel" class="UserLabels">*Address:</p>
+            <input id="AddressInput" class="UserInputs" type="text"/>
+            <p id="PhoneLabel" class="UserLabels">*Phone number:</p>
+            <input id="PhoneInput"  class="UserInputs" type="text"/>
+            <a href="PersonalCabinetPage.html">
+                <input id="EnterButton" type="button" class="UserButtons" value="Log in"/>
+            </a>
+        </div>
+    </body>
+</html>

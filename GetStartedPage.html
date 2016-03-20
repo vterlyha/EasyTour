@@ -1,0 +1,46 @@
+<html>    
+    <head>
+        <title>Easy tour</title>
+        <link rel="icon" type="image/ico" href="Resources/TitleIcon.ico" />
+        <link rel="stylesheet" type="text/css" href="Stylesheets/MainStyleSheet.css"/>
+    </head>
+    <body style="margin:0">   
+        <ul>
+            <li><a href="EasyTourUI.html" id="HomeTab">Easy-Tour</a></li>
+            <li><a href="LocationOverview.html" id="CountriesTab">Countries</a></li>
+            <li><a href="GetStartedPage.html" id="VocationTab">Get started</a></li>
+            <li><a id="About">About</a></li>
+            <li style="float:right">
+                <a id="UserAvatarLink">
+                    <img width="20px" height="22px" id="UserAvatarImg" src="Resources/UserAvatar.png"/>
+                </a>
+            </li>
+            <li style="float:right"><a href="LogInPage.html" id="UserName" >UserName</a></li>
+        </ul>
+        <h4 class="CountriesHeaders">Thailand</h4>
+        <img src="Resources/thailand1.jpg" class="CountriesImages" onclick="DisplayCities()"/>
+        <select id="CitySelect" onchange="DisplayHotels()" class="UserSelects" style="margin-top:0px; visibility:hidden">
+            <option value="Bangkock">Bangkock</option>
+            <option value="Pataya">Pataya</option>
+        </select>
+        <select id="HotelBangkockSelect" class="UserSelects" style="margin-top:50px; visibility:hidden">
+            <option value="BangkockHotel1">Royal hotel 5*</option>
+            <option value="BangkockHotel2">Awesome hotel</option>
+        </select>
+        <select id="HotelPatayaSelect" class="UserSelects" style="margin-top:50px; visibility:hidden">
+            <option value="PatayaHotel1">Super Mego Hotel 228</option>
+            <option value="PatayaHotel2">Chervona kalyna</option>
+        </select>
+        <select id="RoomSelect" class="UserSelects" style="margin-top:100px; visibility:hidden">
+            <option value="Single room">Single room</option>
+            <option value="Double room">Double room</option>
+            <option value="Twin room">Twin room</option>
+        </select>
+        <p id="RoomAvailabilityLabel" class="UserLabels" style="display:inline; visibility:hidden">Available: 5</p>
+        <a href="PersonalCabinetPage.html">
+            <input type="button" id="ProceedButton" class="UserButtons" value="Send request" style="margin-top:105px"/>
+        </a>
+        <script type="text/javascript" src="Scripts/GetStartedScript.js">
+        </script>
+    </body>
+</html>
