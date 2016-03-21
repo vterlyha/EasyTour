@@ -1,0 +1,29 @@
+<html>    
+    <head>
+        <title>Easy tour</title>
+        <link rel="icon" type="image/ico" href="Resources/TitleIcon.ico" />
+        <link rel="stylesheet" type="text/css" href="Stylesheets/AdminMainStylesheet.css"/>
+    </head>
+    <body style="margin:0">
+        <ul class="Menu">
+            <li class="MenuLi"><a id="UsersTab">Users</a></li>
+            <li class="MenuLi"><a href="AddCountriesPage.html" id="CountriesTab">Countries and hotels</a></li>
+            <li class="MenuLi"><a href="AdminStatistics.html" id="Statistics">Statistics</a></li>
+            <li class="MenuLi" style="float:right">
+                <a id="UserAvatarLink">
+                    <img width="20px" height="22px" id="UserAvatarImg" src="Resources/UserAvatar.png"/>
+                </a>
+            </li>
+            <li class="MenuLi" style="float:right"><a href="LogInPage.html" id="AdminName" >AdminName</a></li>
+        </ul>
+        <div id="StatisticsFrame">
+        </div>
+        <div style="margin-top:20px">
+            <p class="UserLabels" style="display:inline; margin-left: 350px">From:</p>
+            <input type="date" id="fromDate" value="2016-06-01" max="2016-09-04" min="2016-06-01" style="display:inline; margin-left: 20px">
+            <p class="UserLabels" style="display:inline; margin-left: 70px">To:</p>
+            <input type="date" id="toDate" value="2016-09-04" max="2016-09-04" min="2016-06-01" style="display:inline; margin-left: 20px">
+            <input type="button" id="DisplayGraphics" class="UserButtons" value="Show statistics" style="display:inline; margin-left: 70px"/>
+        </div>
+    </body>
+</html>

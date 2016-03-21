@@ -1,0 +1,94 @@
+<html>    
+    <head>
+        <title>Easy tour</title>
+        <link rel="icon" type="image/ico" href="Resources/TitleIcon.ico" />
+        <link rel="stylesheet" type="text/css" href="Stylesheets/AdminMainStylesheet.css"/>
+    </head>
+    <body style="margin:0">
+        <ul class="Menu">
+            <li class="MenuLi"><a id="UsersTab">Users</a></li>
+            <li class="MenuLi"><a href="AddCountriesPage.html" id="CountriesTab">Countries and hotels</a></li>
+            <li class="MenuLi"><a href="AdminStatistics.html" id="Statistics">Statistics</a></li>
+            <li class="MenuLi" style="float:right">
+                <a id="UserAvatarLink">
+                    <img width="20px" height="22px" id="UserAvatarImg" src="Resources/UserAvatar.png"/>
+                </a>
+            </li>
+            <li class="MenuLi" style="float:right"><a href="LogInPage.html" id="AdminName" >AdminName</a></li>
+        </ul>
+        <div style="margin-top: 100px">
+            <p class="UserLabels" style="display:inline; margin-left: 60px">Countries</p>
+            <p class="UserLabels" style="display:inline; margin-left: 250px">Cities</p>
+            <p class="UserLabels" style="display:inline; margin-left: 250px">Hotels</p>
+            <p class="UserLabels" style="display:inline; margin-left: 250px">Rooms</p>
+        </div>
+        <div style="margin-top:50px; margin-left:15px">
+            <ul class="DataLists">
+                <li onclick="thailandClick()">Thailand</li>
+                <li onclick="itallyClick()">Itally</li>
+            </ul>
+            <ul id="ThailandCitiesList" class="DataLists" style="visibility:hidden">
+                <li onclick="bangkockClick()">Bangkock</li>
+                <li onclick="patayaClick()">Pataya</li>
+            </ul>
+            <ul id="ItallyCitiesList" class="DataLists" style="visibility:hidden">
+                <li onclick="veniceClick()">Venice</li>
+                <li onclick="florenceClick()">Florence</li>
+                <li onclick="romeClick()">Rome</li>
+            </ul>
+            <ul id="BangkockHotelsList" class="DataLists" style="visibility:hidden">
+                <li onclick="displayTable()">Bangkock hotel 1</li>
+                <li onclick="displayTable()">Bangkock hotel 2</li>
+            </ul>
+            <ul id="PatayaHotelsList" class="DataLists" style="visibility:hidden">
+                <li onclick="displayTable()">Pataya hotel 1</li>
+                <li onclick="displayTable()">Pataya hotel 2</li>
+            </ul>
+            <ul id="VeniceHotelsList" class="DataLists" style="visibility:hidden">
+                <li onclick="displayTable()">Venice hotel 1</li>
+                <li onclick="displayTable()">Venice hotel 2</li>
+            </ul>
+            <ul id="FlorenceHotelsList" class="DataLists" style="visibility:hidden">
+                <li onclick="displayTable()">Florence hotel 1</li>
+                <li onclick="displayTable()">Florence hotel 2</li>
+            </ul>
+            <ul id="RomeHotelsList" class="DataLists" style="visibility:hidden">
+                <li onclick="displayTable()">Rome hotel 1</li>
+                <li onclick="displayTable()">Rome hotel 2</li>
+            </ul>
+            <table id="AvailabilityTable" style="visibility:hidden">
+                <tr>
+                    <td>Single</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td>Double</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>Twin</td>
+                    <td>3</td>
+                </tr>
+            </table>
+        </div>
+        <div style="margin-top:200px">
+            <p class="UserLabels" style="display:inline; margin-left: 60px">Enter country:</p>
+            <p class="UserLabels" style="display:inline; margin-left: 215px">Enter city:</p>
+            <p class="UserLabels" style="display:inline; margin-left: 215px">Enter hotel name:</p>
+            <p class="UserLabels" style="display:inline; margin-left: 150px">Enter room number:</p>
+        </div>
+        <div style="margin-top:10px">
+            <input id="CountryInput" class="UserInputs" type="text" style="display:inline; margin-left: 60px"/>
+            <input id="CityInput" class="UserInputs" type="text" style="display:inline; margin-left: 140px"/>
+            <input id="HotelInput" class="UserInputs" type="text" style="display:inline; margin-left: 100px"/>
+            <select id="HotelPatayaSelect" class="UserSelects" style="display:inline; margin-left: 105px">
+                <option value="SingleRoom">Single room</option>
+                <option value="DoubleRoom">Double room</option>
+                <option value="DoubleRoom">Double room</option>
+            </select>
+            <input id="RoomNumberInput" class="UserInputs" type="text" style="display:inline; margin-left: 10px; width: 80px"/>
+        </div>
+        <script type="text/javascript" src="Scripts/AddCityScript.js">
+        </script>
+    </body>
+</html>
